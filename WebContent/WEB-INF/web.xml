@@ -8,10 +8,19 @@
   	<listener-class>org.student.listener.ListenerTest</listener-class>
   </listener>
    -->
-  
-    <listener>
+  <!-- 
+  <listener>
   	<listener-class>org.student.listener.AttributeListenerTest</listener-class>
   </listener>
+   -->
+   <!-- 
+   <listener>
+  	<listener-class>org.student.listener.BeanListener</listener-class>
+	</listener>
+    -->
+	<listener>
+  	<listener-class>org.student.listener.BeanListener2</listener-class>
+	</listener>
   
   
   <welcome-file-list>
@@ -62,9 +71,7 @@
     <servlet-name>InitServlet</servlet-name>
     <url-pattern>/InitServlet</url-pattern>
   </servlet-mapping>
-  
-  <!-- 配置过滤器 -->
-    
+ <!--  配置过滤器 
   <filter>
   		<filter-name>MyServlet</filter-name>
   		<filter-class>org.student.filter.MyFilter</filter-class>
@@ -84,5 +91,8 @@
   		<filter-name>MyFilter2</filter-name>
   		<url-pattern>/Suibianxiede</url-pattern>
   </filter-mapping>
+ 
+   --> 
+  
  
 </web-app>
